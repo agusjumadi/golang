@@ -12,3 +12,6 @@ func Index(writer http.ResponseWriter, request *http.Request) {
 	b, _ := json.Marshal(data)
 	fmt.Fprint(writer, string(b))
 }
+func Create(writer http.ResponseWriter, request *http.Request) {
+	fmt.Fprint(writer, "test")
+}
